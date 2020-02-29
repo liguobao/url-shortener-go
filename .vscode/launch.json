@@ -1,0 +1,20 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "Launch file",
+        "type": "go",
+        "request": "launch",
+        "mode": "debug",
+        "program": "${file}",
+        "env": {
+            "LINK_CODES_PREFIX": "_bc_link_test_code",
+            "URL_SHORTER_DOMAIN": "localhost:8080",
+            "MYSQL_CONF": "root:123@tcp(127.0.0.1:3306)/url_shortener?charset=utf8&parseTime=True&loc=Local",
+            "MQ_CONF": "amqp://admUser:adminUser@127.0.0.1:5673/%2F",
+
+        }
+    }]
+}
